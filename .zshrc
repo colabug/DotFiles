@@ -5,8 +5,8 @@ export TERM=xterm
 export EDITOR=vim
 export TAGS_TYPE=ctags
 export JAVA_HOME="/Library/Java/Home/"
-export ANDROID_HOME="/usr/bin/android-sdk-mac_x86/"
-export PATH="/usr/bin/android-sdk-mac_x86/platform-tools:/usr/bin:/usr/bin/android-sdk-mac_x86/tools:/usr/local/apache-maven-2.1.2/bin:$PATH"
+export ANDROID_HOME="/usr/bin/android-sdk-macosx/"
+export PATH="/usr/bin/android-sdk-macosx/platform-tools:/usr/bin:/usr/bin/android-sdk-macosx/tools:/usr/local/apache-maven-2.1.2/bin:$PATH"
 
 # General aliases
 alias vi=vim
