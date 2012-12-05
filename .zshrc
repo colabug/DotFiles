@@ -18,6 +18,8 @@ alias grep="grep -n"
 alias -g ...="../.." 
 alias -g ....="../../.." 
 alias -g .....="../../../.."
+alias -g ......="../../../../.."
+alias mci="mvn clean install"
 
 # Android
 export ANDROID_HOME="/usr/bin/android-sdk-macosx/"
@@ -25,6 +27,7 @@ alias cda="cd /usr/bin/android-sdk-macosx"
 alias cdma="cd ~/Documents/Code/Android"
 alias cdas="cd /usr/bin/android-sdk-macosx/samples"
 alias rma="rm -rf gen out tmp target"
+alias -g adbi="adb install -r"
 
 # Git
 alias gdf="git diff > blah.diff && vim blah.diff"
@@ -34,11 +37,9 @@ alias gdfcw="git diff -w --cached > blah.diff && vim blah.diff"
 alias gits="clear && git status"
 alias gitb="git branch"
 alias -g gco="git checkout"
-alias rmb="rm blah.diff"
 alias gpod="git pull origin development"
 alias gcod="git checkout origin development"
-alias mci="mvn clean install"
-alias -g adbi="adb install -r"
+alias rmb="rm blah.diff"
 
 # History settings
 HISTFILE=~/.history
