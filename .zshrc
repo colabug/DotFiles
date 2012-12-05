@@ -5,7 +5,6 @@ export TERM=xterm
 export EDITOR=vim
 export TAGS_TYPE=ctags
 export JAVA_HOME="/Library/Java/Home/"
-export ANDROID_HOME="/usr/bin/android-sdk-macosx/"
 export PATH="/usr/bin/android-sdk-macosx/platform-tools:/usr/bin:/usr/bin/android-sdk-macosx/tools:/usr/local/apache-maven-2.1.2/bin:$PATH"
 
 # General aliases
@@ -19,6 +18,13 @@ alias grep="grep -n"
 alias -g ...="../.." 
 alias -g ....="../../.." 
 alias -g .....="../../../.."
+
+# Android
+export ANDROID_HOME="/usr/bin/android-sdk-macosx/"
+alias cda="cd /usr/bin/android-sdk-macosx"
+alias cdma="cd ~/Documents/Code/Android"
+alias cdas="cd /usr/bin/android-sdk-macosx/samples"
+alias rma="rm -rf gen out tmp target"
 
 # Git
 alias gdf="git diff > blah.diff && vim blah.diff"
