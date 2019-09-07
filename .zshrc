@@ -4,7 +4,7 @@ export PROMPT="[%n:%/] "
 export TERM=xterm
 export EDITOR=vim
 export TAGS_TYPE=ctags
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home
 
 # Android
 export ANDROID_AVD_HOME=$HOME/.android/avd
@@ -12,9 +12,13 @@ export ANDROID_HOME=/Users/colabug/Library/Android/sdk
 export LD_LIBRARY_PATH=$ANDROID_HOME/tools/lib
 export ANDROID_NDK_HOME=/Users/colabug/Library/Android/ndk/android-ndk-r10e
 alias cda="cd $ANDROID_HOME"
-alias cdas="cd $ANDROID_HOME/samples"
 alias cdma="cd /Users/colabug/Documents/Code/Android/"
 alias adbi="adb install -r"
+
+# Books
+alias pdf="gitbook pdf . && open book.pdf"
+alias sb="softcover build:pdf && open ebooks/*.pdf"
+alias -g sc="aspell -c"
 
 # Wear
 alias wconn="adb forward tcp:4444 localabstract:/adb-hub; adb connect localhost:4444"
@@ -32,8 +36,6 @@ alias gch="./gradlew check"
 # General aliases
 alias vi=vim
 alias c=clear
-alias ls="ls -G"
-alias la="ls -Gla"
 alias vz="vim ~/.zshrc"
 alias sz="source ~/.zshrc"
 alias grep="grep -n"
@@ -42,6 +44,7 @@ alias -g ....="../../.."
 alias -g .....="../../../.."
 alias -g ......="../../../../.."
 alias -g .......="../../../../../.."
+alias gb="open /Applications/GitBook.app"
 alias sc="aspell -c "
 
 # Git
